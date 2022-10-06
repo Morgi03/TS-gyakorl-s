@@ -7,6 +7,14 @@ export class Book {
         this.setRating(rating);
     }
 
+    public getRating() : number {
+        return this.#rating; 
+    }
+    
+    public getName() : string {
+        return this.#name; 
+    }
+    
     public setRating(newrating : number) : void {
         if(newrating >= 1 && newrating <= 10) {
             this.#rating = newrating;

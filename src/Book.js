@@ -20,6 +20,12 @@ class Book {
         __classPrivateFieldSet(this, _Book_name, name, "f");
         this.setRating(rating);
     }
+    getRating() {
+        return __classPrivateFieldGet(this, _Book_rating, "f");
+    }
+    getName() {
+        return __classPrivateFieldGet(this, _Book_name, "f");
+    }
     setRating(newrating) {
         if (newrating >= 1 && newrating <= 10) {
             __classPrivateFieldSet(this, _Book_rating, newrating, "f");
